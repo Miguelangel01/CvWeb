@@ -1,0 +1,20 @@
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  
+    <label>
+      Nombre:
+      <div class="col-6 col-12-xsmall"><input type="text" name="nombre" id="nombre" placeholder="Nombre" formControlName="nombre"/></div>
+    </label>
+  
+    <label>
+      Apellido:
+      <div class="col-6 col-12-xsmall"><input type="text" name="apellido" id="apellido" placeholder="Apellido" formControlName="apellido"/></div>
+    </label>
+
+      <label>
+        Mensaje:
+        <div class="col-12"><textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="4" formControlName="mensaje"></textarea></div>
+      </label>
+      
+
+  </form>
