@@ -15,6 +15,8 @@
         Mensaje:
         <div class="col-12"><textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="4" formControlName="mensaje"></textarea></div>
       </label>
-      
+      <ul>
+        <button class="button" type="submit" [disabled]="!profileForm.valid">Enviar</button>
+      </ul>
 
   </form>
